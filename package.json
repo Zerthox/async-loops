@@ -1,0 +1,19 @@
+{
+  "name": "async-loops",
+  "version": "0.1.0",
+  "description": "Asynchronous, non-blocking versions of loops.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zerthox/async-loops.git"
+  },
+  "author": "Zerthox",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Zerthox/async-loops/issues"
+  },
+  "homepage": "https://github.com/Zerthox/async-loops#readme"
+}
