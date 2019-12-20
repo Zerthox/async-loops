@@ -1,6 +1,6 @@
 {
   "name": "async-loops",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Asynchronous, non-blocking versions of loops.",
   "main": "index.js",
   "scripts": {

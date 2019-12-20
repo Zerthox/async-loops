@@ -3,13 +3,13 @@ function asyncWhile(condition, body) {
 		const loop = async () => {
 			if (await condition()) {
 				await body();
-				setTimeout(loop, 0);
+				loop();
 			}
 			else {
 				resolve();
 			}
 		};
-		setTimeout(loop, 0);
+		loop();
 	});
 }
 
@@ -20,13 +20,13 @@ function asyncFor(initial, condition, increment, body) {
 			if (await condition(i)) {
 				await body(i);
 				i = await increment(i);
-				setTimeout(loop, 0);
+				loop();
 			}
 			else {
 				resolve();
 			}
 		};
-		setTimeout(loop, 0);
+		loop();
 	});
 }
 
@@ -38,13 +38,13 @@ function asyncEach(object, body) {
 			if (i < keys.length) {
 				await body(keys[i], object[keys[i]], i, object);
 				i++;
-				setTimeout(loop, 0);
+				loop();
 			}
 			else {
 				resolve();
 			}
 		};
-		setTimeout(loop, 0);
+		loop();
 	});
 }
 
